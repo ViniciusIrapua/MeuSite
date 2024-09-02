@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    background-color: white
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+
+a {
+    color: #000000; /* Altere para a cor desejada */
+    text-decoration: none; /* Remove o sublinhado */
+}
+a:hover {
+    color: #C70039; /* Cor do link ao passar o mouse */
+}
+#wrap>header{
+    margin-top: 3rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#wrap>nav {
+    margin-top: 1rem;
+    background-color: rgb(255, 255, 255)
+}
+
+#wrap>main{
+    margin-top: 3rem;
+    background-color: rgb(255, 255, 255);
+}
+#wrap>footer {
+    background-color: rgb(122, 122, 122);
+    color: rgb(255, 187, 187);
+}
+
+#wrap>footer a {
+    color: rgb(255, 187, 187);
+}
+
+#wrap>footer a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.footer_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 0;
+    border-bottom: 1px dotted gray;
+}
+
+.footer_top a i {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.footer_top div {
+    font-size: small;
+}
+
+.footer_botton {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.footer_botton nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.9;
+}
+
+.footer_botton nav h4 {
+    margin: 0 0 .5rem 0;
+}
+
+.footer_botton nav a {
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 575px) {
+
+    #wrap>header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #wrap>nav a {
+        flex-direction: row;
+    }
+
+    #wrap>nav a i {
+        font-size: 1.2rem;
+        margin: 0 .35rem 0 0;
+    }
+}
+
+@media screen and (min-width: 640px) {
+
+    #wrap>main {
+        flex-direction: row;
+    }
+
+    #wrap>main>aside {
+        min-width: 12.5rem;
+        max-width: 12.5rem;
+    }
+
+}
