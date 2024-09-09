@@ -1,36 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contatos</title>
+    <link rel="stylesheet" href="/css/template.css">
+    <title>Meu Site</title>
+    <link rel="shortcut icon" href="/img/Captura_de_tela_2024-09-02_140214-removebg-preview.png">
+    <link rel="stylesheet" href="/css/contacts.css">
 </head>
+
 <body>
 
-    <div id="contatos">
+    <div id="wrap">
 
         <header>
+            <a href="">
+                <h1>Faça contato com</h1>
+            </a>
             <a href="/" title="Nome do criador do site">
-                <h2>Contatos </h2>
+                <h2>Vinícius Irapuã</h2>
             </a>
         </header>
+
+        <nav>
+
+            <a href="/_template.html" title="Voltar para tela inicial">
+                <i class="fa-solid fa-arrow-left-long fa-fw"></i>
+                <span>Voltar</span>
+
+        </nav>
+
+        <main>
+
+            <article>
+
+                <p>Preencha os campos abaixo para entrar em contato com a equipe <strong>PyBlog</strong>.</p>
+                <p class="center red">Todos os campos obrigatórios.</p>
+
+                <form action="contacts.html#" method="post">
+
+                    <p>
+                        <label for="fieldName">Seu nome:</label>
+                        <input type="text" name="name" id="fieldName" required minlength="3">
+                    </p>
+
+                    <p>
+                        <label for="fieldEmail">Seu e-mail:</label>
+                        <input type="email" name="email" id="fieldEmail" required>
+                    </p>
+
+                    <p>
+                        <label for="fieldSubject">Assunto:</label>
+                        <input type="text" name="subject" id="fieldSubject" required minlength="5">
+                    </p>
+
+                    <p>
+                        <label for="fieldMessage">Mensagem:</label>
+                        <textarea name="message" id="fieldMessage" required minlength="5"></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar</button>
+                        <small>&larr; Clique somente uma vez</small>
+                    </p>
+
+                </form>
+
+            </article>
+
+            <aside>
+                <h3><i class="fa-solid fa-plus"></i> Contatos</h3>
+
+                <p>Acesse nossas redes sociais para saber mais sobre o <strong>PyBlog</strong>.</p>
+
+                <div>
+                    <a href="https://facebook.com/pyblog" target="_blank">
+                        <i class="fa-brands fa-facebook fa-fw fa-3x" style="color: #1877f2"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/Pyblog" target="_blank">
+                        <i class="fa-brands fa-linkedin-in fa-fw fa-3x" style="color: #b24020"></i>
+                    </a>
+
+                    <a href="https://youtube.com/PyBlog" target="_blank">
+                        <i class="fa-brands fa-youtube fa-fw fa-3x" style="color: #ff0000;"></i>
+                    </a>
+
+                    <a href="https://github.com/PyBlog" target="_blank">
+                        <i class="fa-brands fa-github fa-fw fa-3x" style="color: #6e5494;"></i>
+                    </a>
+                </div>
+
+            </aside>
+
+        </main>
+
+        <footer>
+
+            <div class="footer_top">
+
+                <a href="/" title="Ir para a página inicial"><i class="fa-solid fa-house fa-fw"></i></a>
+                <div><i class="fa-regular fa-copyright fa-flip-horizontal"></i> Copyleft 2024 Vinícius Irapuã</div>
+                <a href="#wrap" title="ir para o topo desta página"><i class="fa-solid fa-circle-up fa-fw"></i></a>
+
+            </div>
+
+            <div class="footer_botton">
+
+                <nav>
+
+                    <h4>Redes Sociais</h4>
+
+                    <a href="https://www.instagram.com/MLK__VN__/">
+                        <i class="fa-brands fa-instagram"></i> <span>Instagram</span>
+                    </a>
+                    <a href="https://linkedin.com/">
+                        <i class="fa-brands fa-linkedin fa-fw"></i>
+                        <span>Linkedin</span>
+                    </a>
+                    <a href="https://github.com/">
+                        <i class="fa-brands fa-square-github fa-fw"></i>
+                        <span>GitHub</span>
+                    </a>
+                </nav>
+
+
+                <nav>
+
+                    <h4>Links rápidos</h4>
+
+                    <a href="/policyes.html">
+                        <i class="fa-solid fa-lock fa-fw"></i>
+                        <span>Privacidade</span>
+                    </a>
+                    <a href="/contacts.html">
+                        <i class="fa-solid fa-comments fa-fw"></i>
+                        <span>Contatos</span>
+                    </a>
+                    <a href="/about.html">
+                        <i class="fa-solid fa-circle-info fa-fw"></i>
+                        <span>Sobre</span>
+                    </a>
+                </nav>
+
+            </div>
+
+        </footer>
     </div>
+
 </body>
+
 </html>
-<style>
-    body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgb(116, 116, 116)
-}
-
-a {
-    color: #ffffff; /* Altere para a cor desejada */
-    text-decoration: none; /* Remove o sublinhado */
-}
-
-</style>
