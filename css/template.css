@@ -62,9 +62,11 @@ a:hover {
 #wrap>main>article {
     flex-grow: 1;
     padding: 1rem;
+    background-color: rgb(221, 221, 221);
 }
 #wrap>main>aside {
     padding: 1rem;
+    background-color: rgb(179, 179, 179);
 }
 #wrap>footer {
     background-color: rgb(122, 122, 122);
@@ -144,5 +146,22 @@ a:hover {
     #wrap>main>aside {
         min-width: 12.5rem;
         max-width: 12.5rem;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    #wrap>nav {
+        display: flex;
+        justify-content: center;
+        gap: 130px; /* Ajuste o valor conforme necessário */
+
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #wrap>nav {
+        display: flex;
+        justify-content: center;
+        gap: 260px; /* Ajuste o valor conforme necessário */
     }
 }
